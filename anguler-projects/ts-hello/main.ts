@@ -1,3 +1,4 @@
+
 /*//
 function log(message) {
     console.log(message);
@@ -34,18 +35,7 @@ enum Color { Red = 0, Green = 1, Blue = 2 };
 let backgroundColor = Color.Red;
 //*/
 
-class Point {
-    private x: number;
-    private y: number;
-    
-    constructor(x?: number, y?: number) {
-        this.x = x;
-        this.y = 2;
-    }
-    draw()  {
-        console.log('X: ' + this.x + ', Y: ' + this.y)
-    }
-}
+import {Point} from './point';
 
-let point = new Point(1, 2)
+let point = new Point(1, 2);
 point.draw();
